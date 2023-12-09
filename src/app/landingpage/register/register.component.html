@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row mt-4">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col">
+            <div class="card card-body border b-5 bg-warning mt-5">
+                <h3 class="text-center" id="signup">Sign-Up</h3>
+                    <div class="mt-3">
+                        <input type="text" placeholder="EmpID..." name="empid" [(ngModel)]="empid" class="form-control"/>
+                    </div>
+                    <div class="mt-3">
+                        <input type="text" placeholder="Username..." name="username" [(ngModel)]="username" class="form-control"/>
+                    </div> 
+                    <div class="mt-3">
+                        <input type="text" placeholder="MobileNumber..." name="mobnum" [(ngModel)]="mobnum" class="form-control"/>
+                    </div> 
+                    <div class="mt-3">
+                        <input type="text" placeholder="Create Password..." name="createpass" [(ngModel)]="createpass" class="form-control"/>
+                    </div>
+                    <div class="mt-3"><button class="btn btn-success" (click)="getsignup()">Sign-Up</button>
+                    <button class="btn btn-danger ms-4" (click)="reset()">Clear</button></div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,60 @@
+<div class="container">
+        <h3 id="head">Bus Registration</h3>
+ 
+ <div class="row mt-3">
+    <div class="col-2">
+        <label>Vehicle Number</label>
+    </div>
+    <div class="col-4">
+        <input type="text" class="form-control" [(ngModel)]="vehicleno">
+    </div>
+  </div>  
+  <div class="row  mt-3">
+    <div class="col-2">
+        <label>Vehicle Type</label>
+    </div>
+    <div class="col-4">
+        <input type="text" class="form-control" [(ngModel)]="vehicletype">
+    </div>
+  </div>  
+  <div class="row  mt-3">
+    <div class="col-2">
+        <label>Chasis Number</label>
+    </div>
+    <div class="col-4">
+        <input type="text" class="form-control" [(ngModel)]="chasisno">
+    </div>
+  </div>  
+  <div class="row  mt-3">
+    <div class="col-2">
+        <label>Engine Number</label>
+    </div>
+    <div class="col-4">
+        <input type="text" class="form-control" [(ngModel)]="engineno">
+    </div>
+  </div>  
+  <div class="row  mt-3">
+    <div class="col-2">
+        <label>Insurence Date</label>
+    </div>
+    <div class="col-4">
+        <input type="text" class="form-control" [(ngModel)]="insurancedate">
+    </div>
+  </div>  
+  <div class="row  mt-3">
+    <div class="col-2">
+        <label>Quartly Tax</label>
+    </div>
+    <div class="col-4">
+        <input type="text" class="form-control" [(ngModel)]="quartlytax">
+    </div>
+  </div>  
+  <div class="row  mt-3">
+    <div class="col-2">
+        <label>Route Number</label>
+    </div>
+    <div class="col-4">
+        <input type="text" class="form-control" [(ngModel)]="routenumber">
+    </div>
+</div>
+<button class="btn btn-warning" id="clear" (click)="cleardata()">Clear</button><button class="btn btn-primary" id="register" (click)="register()">Register</button> 
