@@ -13,8 +13,8 @@ const routes: Routes = [
 {path:'login',component:LoginComponent},
 {path:'bus-register',component:BusRegisterComponent},
 {path:'bus-routes',component:BusRoutesComponent},
-{path:'driverlogin',component:DriverLoginComponent},
-{path:'driverregister',component:DriverRegisterComponent},
+{path:'driver-login',component:DriverLoginComponent},
+{path:'driver-register',component:DriverRegisterComponent},
 
 
 ];

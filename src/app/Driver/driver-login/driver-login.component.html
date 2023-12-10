@@ -1,14 +1,22 @@
 <div class="container">
-    <form class="form">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <label></label>
+
+    <div class="row mt-4">
+        <div class="col"></div>
+        <div class="col">
+            <div class="card card-body border-5">
+                <h1> Driver Login</h1> 
+                <div class="mt-3">
+                    <input type="text" name="empid" placeholder="Enter empid..."  [(ngModel)]="empid" class="form-control">
                 </div>
-                <div class="col">
-                    <input type="text" class="form-control">
+                
+                <div class="mt-3">
+                    <input type="password" name="password" placeholder="Enter password..." [(ngModel)]="password"class="form-control">
+                </div>
+                <div  class="mt-3">
+                    <button class="btn btn-warning" (click)="clear()">Clear</button><button class="btn btn-primary" (click)="validateLogin()">Login</button>
                 </div>
             </div>
         </div>
-    </form>
+        <div class="col"></div>
+    </div>
 </div>
