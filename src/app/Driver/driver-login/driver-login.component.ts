@@ -28,7 +28,7 @@ export class DriverLoginComponent {
       this.apiService.getApiDataByfilter(ApiUrls.driverregisterapi, appliedFilters).subscribe(
         (data: any) => {
           console.log(data);
-          if (data.length > 0 && data[0].empid == this.empid && data[0].passsword == this.password){
+          if (data.length > 0 && data[0].empid == this.empid && data[0].password == this.password){
             // sessionStorage.setItem('userMobile', data[0].mobile);
             this.router.navigate(['/login']);
             this.clear();
