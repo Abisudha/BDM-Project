@@ -1,20 +1,37 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Logo</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+<div class="container">
+  <h1 class="text-center bg-info p-3 "> Bus Depo Maintenance</h1>
+</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-black p-5 ">
   
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Transaction</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Profile</a>
-        </li>
-      </ul>
-    </div>
+  <button mat-button>Home
+    <mat-icon>home</mat-icon>
+  </button>
+<button mat-button [matMenuTriggerFor]="belowMenu">
+  <mat-icon>receipt</mat-icon>Register</button>
+<mat-menu #belowMenu="matMenu">
+  <button mat-menu-item>
+    <mat-icon> directions_bus</mat-icon>Bus Register</button>
+  <button mat-menu-item>
+    <mat-icon> add_location</mat-icon>Route Register</button>
+  <button mat-menu-item>
+    <mat-icon>how_to_reg</mat-icon>Driver Register</button>
+</mat-menu>
+
+<button mat-button [matMenuTriggerFor]="beforeMenu">
+  <mat-icon>room</mat-icon>Routes</button>
+<mat-menu #beforeMenu="matMenu">
+  <button mat-menu-item>
+    <mat-icon> directions</mat-icon>Route Allocation</button>
+  <button mat-menu-item><mat-icon>receipt</mat-icon>
+    Ticket Creation</button>
+</mat-menu>
+
+
+<button mat-button>
+  <mat-icon> local_gas_station</mat-icon>Fuel Maintenance</button>
+<button mat-button><mat-icon>build</mat-icon>
+  Services</button>
+<button mat-button><mat-icon>exit_to_app</mat-icon>
+  Logout</button>
+    
   </nav>

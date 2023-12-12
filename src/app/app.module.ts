@@ -12,7 +12,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { BusRegisterComponent } from './bus/bus-register/bus-register.component';
 import { BusRoutesComponent } from './bus/bus-routes/bus-routes.component';
 import { DriverRegisterComponent } from './Driver/driver-register/driver-register.component';
-import { DriverLoginComponent } from './Driver/driver-login/driver-login.component'
+import { DriverLoginComponent } from './Driver/driver-login/driver-login.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+
+
+import {MatMenuModule} from '@angular/material/menu';
+import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -32,7 +38,9 @@ import { DriverLoginComponent } from './Driver/driver-login/driver-login.compone
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatMenuModule,MatButtonModule,MatIconModule
 
     
   ],
